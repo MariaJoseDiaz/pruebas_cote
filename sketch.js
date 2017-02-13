@@ -34,12 +34,12 @@ function draw(){
     else if (energy > 0.5 && energy < maxEnergy){
         
      textFont(fontTitle);
-     textSize(height/20);
+     textSize(width/10);
      textAlign(CENTER);
      textStyle(BOLD);
      fill(0);
      noStroke();
-     text("EARTHQUAKE INTENSITY", width/5,height - height/2);
+     text("EARTHQUAKE INTENSITY", width/2,height - height/1.1);
         
      //CREATE THE ELLIPSE AREA
     var x = width/2;
