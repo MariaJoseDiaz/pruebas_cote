@@ -16,7 +16,7 @@ var myJapon;
 
 function preload() {
     //myResult = loadImage("images/prova1.png");
-    myChile = loadImage("imagenes/chile.png");
+    myChile = loadImage("chile.png");
 }
     
 function setup(){
