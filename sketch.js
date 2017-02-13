@@ -55,7 +55,7 @@ function draw(){
     fill(0);
     noStroke();    
     
-    textSize(height/40);
+    textSize(height/15);
     textAlign(CENTER);
     textStyle(NORMAL);
     text("Magnitude", width/2, height - height/5);
