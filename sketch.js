@@ -13,9 +13,9 @@ var myImage2;
 var fontTitle;
 
 function preload() {
-    cover = loadImage("images/Tavola disegno 18-100.jpg");
-    myImage1 = loadImage("images/prova1.png");
-    myImage2 = loadImage("images/prova2.jpg");
+    cover = loadImage("Tavola disegno 18-100.jpg");
+    myImage1 = loadImage("prova1.png");
+    myImage2 = loadImage("prova2.jpg");
       fontTitle = loadFont("OCRBStd.otf");
 }
     
