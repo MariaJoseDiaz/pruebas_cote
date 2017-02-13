@@ -14,9 +14,13 @@ var myJapon;
 */
 //var myResults;
 
+var fontTitle
+
+
 function preload() {
     //myResult = loadImage("images/prova1.png");
     myChile = loadImage("chile.png");
+    fontTitle = loadFont("OCRBStd.otf");
 }
     
 function setup(){
@@ -26,6 +30,7 @@ function setup(){
     
      background(204);
     
+    textFont(fontTitle);
     textSize(height/20);
     textAlign(CENTER);
     textStyle(BOLD);
@@ -35,8 +40,6 @@ function setup(){
 }
 
 function draw(){
-    
-     
      
     var magnitude = int(map(energy, 0, 1000, 0, 10)); 
     
@@ -71,10 +74,10 @@ function draw(){
     textStyle(BOLD);
     text(magnitude,width/2, height - height/6.7);
     
-    textSize(height/50);
+  /*  textSize(height/50);
     textAlign(CENTER);
     textStyle(NORMAL);    
-    text(energy, width/2, height - height/8);
+    text(energy, width/2, height - height/8); */
         
          //buttons  
           
@@ -106,9 +109,6 @@ function draw(){
         dots[i]. display();
         
       }
-          
-
-
 }
 
 function deviceShaken(){
@@ -127,8 +127,7 @@ function deviceShaken(){
         dots.push(new QuakeDots());
     } 
     background(204);
-    
-    
+
 }
 // HACER UN IF PARA CUANDO ES MENOR, PONER TEXTO PARA QUE LO INTENTE DE NUEVO CON MAS FUERZA
 
