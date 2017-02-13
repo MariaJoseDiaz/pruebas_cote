@@ -34,7 +34,7 @@ function draw(){
     else if (energy > 0.5 && energy < maxEnergy){
         
      textFont(fontTitle);
-     textSize(width/10);
+     textSize(height/30);
      textAlign(CENTER);
      textStyle(BOLD);
      fill(0);
