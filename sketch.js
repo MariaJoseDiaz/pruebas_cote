@@ -39,7 +39,7 @@ function draw(){
      textStyle(BOLD);
      fill(0);
      noStroke();
-     text("EARTHQUAKE INTENSITY", width/2,height - height/1.1);
+     text("EARTHQUAKE INTENSITY", width/5,height - height/2);
         
      //CREATE THE ELLIPSE AREA
     var x = width/2;
