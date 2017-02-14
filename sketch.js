@@ -24,7 +24,7 @@ function preload() {
     
 function setup(){
     createCanvas(windowWidth, windowHeight);
-    translate(0, 50);
+  //  translate(0, 50);
 }
 
 function draw(){
@@ -71,9 +71,9 @@ function draw(){
         
         //buttons
         
-     // see results   
+     /* see results   
     textSize(height/10);
-    textAlign(CENTER);
+   textAlign(CENTER);
     textStyle(BOLD);
     text("see results",width/7, height - (height/15)*14);
            
@@ -84,6 +84,7 @@ function draw(){
     textAlign(CENTER);
     textStyle(BOLD);
     text("try again",(width/7)*5, height - (height/15)*14);
+    */
         
    /* button1 = createButton("See results");
     button1.position(width/7,(height/15)*14);
@@ -156,11 +157,12 @@ function QuakeDots(){
 
     // result buttons
     
- function touchStarted () {
+ /* function touchStarted () {
   if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= x && mouseY <= x + rect_height)
    background(204);
    energy = 0;
 }
+*/
 
     /* function results() {
      if (magnitude <= 6){
