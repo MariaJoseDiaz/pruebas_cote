@@ -196,10 +196,13 @@ var cover;
 var myImage1;
 var myImage2;
 
+var fontTitle;
+
 function preload() {
     cover = loadImage("images/Tavola disegno 18-100.jpg");
     myImage1 = loadImage("images/prova1.png");
     myImage2 = loadImage("images/prova2.jpg");
+    fontTitle = loadFont("OCRBStd.otf");
 }
     
 function setup(){
@@ -215,8 +218,10 @@ function draw(){
      image(cover,0,0,windowWidth,windowHeight); 
      } 
     else if (energy > 0.5 && energy < maxEnergy){
+     
         
-     textSize(height/20);
+     textFont(fontTitle);
+     textSize(height/30);
      textAlign(CENTER);
      textStyle(BOLD);
      fill(0);
