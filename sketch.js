@@ -114,7 +114,6 @@ function draw(){
         dots[i]. display();  
       }
 }
-}
 
 function deviceShaken(){
     
