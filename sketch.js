@@ -86,7 +86,7 @@ function draw(){
     text("try again",(width/7)*5, height - (height/15)*14);
     */
         
-   /* button1 = createButton("See results");
+    button1 = createButton("See results");
     button1.position(width/7,(height/15)*14);
     button1.touchStarted(results);
         
@@ -95,7 +95,7 @@ function draw(){
     button2.touchStarted(clearEverything);   
   
       }
-   */
+   
         
     } else if(energy >= maxEnergy) {
     textSize(height/20);
@@ -164,22 +164,22 @@ function QuakeDots(){
 }
 */
 
-    /* function results() {
+     function results() {
      if (magnitude <= 6){
          image(myImage1,0,0,windowWidth,windowHeight);
      } else {
          image(myImage2,0,0,windowWidth,windowHeight);
      }
      }
-     */
+     
   
  
 
-/* function clearEverything() {
+ function clearEverything() {
     background(204);
     energy = 0;
  }
-*/
+
 
 function windowResized(){
     resizeCanvas(windowWidth,windowHeight);
