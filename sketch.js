@@ -95,7 +95,7 @@ function draw(){
     button2.position((width/7)*5, (height/15)*14);
     button2.touchStarted(clearEverything);   
     
-}
+//}
     
     } else if(energy >= maxEnergy) {
     textSize(height/20);
@@ -113,6 +113,7 @@ function draw(){
         dots[i].move();
         dots[i]. display();  
       }
+}
 }
 
 function deviceShaken(){
