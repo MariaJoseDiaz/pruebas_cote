@@ -24,6 +24,7 @@ function preload() {
     
 function setup(){
     createCanvas(windowWidth, windowHeight);
+    translate(0, 50);
 }
 
 function draw(){
