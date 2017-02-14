@@ -14,6 +14,8 @@ var fontTitle;
 var seeresults
 var tryagain
 
+var rect_widht = 60;
+var rect_height = 10;
 
 function preload() {
     cover = loadImage("Tavola disegno 18-100.jpg");
@@ -54,6 +56,8 @@ function draw(){
     stroke(0);
     strokeWeight(1);
     ellipse (x, y, r, r);
+        
+            
 
     //magnitude indication
     fill(0);
@@ -68,24 +72,29 @@ function draw(){
     textAlign(CENTER);
     textStyle(BOLD);
     text(magnitude,width/2, height - height/6.7);
-           
      
                 //buttons
-        
-     /* 
-     // see results   
-    textSize(height/10);
-   textAlign(CENTER);
-    textStyle(BOLD);
-    text("see results",width/7, height - (height/15)*14);
-          
-      //try again
-        
-    textSize(height/10);
+    textSize(height/40);
     textAlign(CENTER);
     textStyle(BOLD);
-    text("try again",(width/7)*5, height - (height/15)*14);
-    */
+    text("see results",(width/8)*2, (height/15)*14);
+    rectMode(CENTER);
+    noFill();
+    stroke(255);
+    rect(((width/8)*2), ((height/15)*14)-3, rect_widht, rect_height);
+
+  
+    fill(0)
+    noStroke()
+    textSize(height/40);
+    textAlign(CENTER);
+    textStyle(BOLD);
+    text("try again",(width/8)*6, (height/15)*14);
+    rectMode(CENTER);
+    noFill();
+    stroke(255);
+    rect(((width/8)*6), ((height/15)*14)-3, rect_widht, rect_height);
+           
          
         
 /*
