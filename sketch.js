@@ -25,7 +25,7 @@ var fondo;
 
 
 function preload() {
-    cover = loadGif"gif.gif");
+    cover = createImg("gif.gif");
     myImage1 = loadImage("prova1.png");
     myImage2 = loadImage("prova2.jpg");
     fontTitle = loadFont("OCRBStd.otf");
