@@ -217,14 +217,13 @@ function mousePressed () {
   if (mouseX >= a && mouseX <= a + rect_widht && mouseY >= b && mouseY <= b + rect_height){
      energy = 0;
 
-/* }else{
+ }else{
     // c y b = try again
   if (mouseX >= c && mouseX <= c + rect_widht && mouseY >= b && mouseY <= b + rect_height)
          fondo = color(random(0, 170), random(0, 170), random(0, 170));
 
 // fondo = color(random(0, 170), random(0, 170), random(0, 170));
 }
-*/
 }
 
 
@@ -238,11 +237,11 @@ function mousePressed () {
   
  }
 
-/* function clearEverything() {
+function clearEverything() {
     background(204);
     energy = 0;
  }
- */
+
 
 function windowResized(){
     resizeCanvas(windowWidth,windowHeight);
