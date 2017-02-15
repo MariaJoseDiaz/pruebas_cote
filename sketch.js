@@ -25,7 +25,8 @@ var fondo;
 
 
 function preload() {
-    cover = createImg("gif.gif");
+    //cover = createImg("gif.gif");
+    cover = loadImage("Tavola disegno 18-100.jpg");
     myImage1 = loadImage("prova1.png");
     myImage2 = loadImage("prova2.jpg");
     fontTitle = loadFont("OCRBStd.otf");
