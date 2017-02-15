@@ -45,7 +45,9 @@ function draw(){
     
      if (energy < 0.5) {
    //  image(cover,0,0,windowWidth,windowHeight);
-         cover.position (0,0,windowWidth,windowHeight);
+         cover.position (0,0);
+         cover.size(windowWidth,windowHeight);
+  
      } 
     else if (energy > 0.5 && energy < maxEnergy){
      
