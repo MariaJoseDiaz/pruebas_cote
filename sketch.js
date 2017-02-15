@@ -16,6 +16,13 @@ var tryagain
 
 var rect_widht = 60;
 var rect_height = 10;
+var a;
+var b;
+var c;
+
+var fondo;
+
+
 
 function preload() {
     cover = loadImage("Tavola disegno 18-100.jpg");
@@ -26,10 +33,25 @@ function preload() {
     
 function setup(){
     createCanvas(windowWidth, windowHeight);
+    fondo = color(204);
 }
 
+function mousePressed () {
+ // if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= x && mouseY <= x + rect_height)
+  
+  if (mouseX >= a && mouseX <= a + rect_widht && mouseY >= b && mouseY <= b + rect_height)
+ fondo = color(random(0, 170), random(0, 170), random(0, 170));
+
+  if (mouseX >= c && mouseX <= c + rect_widht && mouseY >= b && mouseY <= b + rect_height)
+ fondo = color(random(0, 170), random(0, 170), random(0, 170));
+
+}
+
+
 function draw(){
-     background(204);
+     background(fondo);
+    
+    
      angleMode(DEGREES);  
      var magnitude = int(map(energy, 0, 1000, 0, 10)); 
     
@@ -38,6 +60,7 @@ function draw(){
      } 
     else if (energy > 0.5 && energy < maxEnergy){
      
+        // TEXTS
         
      textFont(fontTitle);
      textSize(height/30);
@@ -46,19 +69,8 @@ function draw(){
      fill(0);
      noStroke();
      text("EARTHQUAKE INTENSITY", width/2,height - height/1.1);
-        
-     //CREATE THE ELLIPSE AREA
-    var x = width/2;
-    var y = height/2;
-    var r = energy * 2; 
-    
-    noFill();
-    stroke(0);
-    strokeWeight(1);
-    ellipse (x, y, r, r);
-        
-            
-
+       
+           
     //magnitude indication
     fill(0);
     noStroke();    
@@ -73,28 +85,38 @@ function draw(){
     textStyle(BOLD);
     text(magnitude,width/2, height - height/6.7);
      
-                //buttons
+      //buttons
+         
+  a = (width/8)*2
+  b = ((height/15)*14)-3
+  c = (width/8)*6
+        
+//a y b
+    fill(0);
+    noStroke();
     textSize(height/40);
-    textAlign(CENTER);
+    //textAlign(CENTER);
     textStyle(BOLD);
     text("see results",(width/8)*2, (height/15)*14);
-    rectMode(CENTER);
+    //rectMode(CENTER);
     noFill();
     stroke(255);
     rect(((width/8)*2), ((height/15)*14)-3, rect_widht, rect_height);
-
-  
-    fill(0)
-    noStroke()
+    // -((width/13)*1) / -((height/50)*1)
+    
+//c y b
+    
+    fill(0);
+    noStroke();
     textSize(height/40);
-    textAlign(CENTER);
+    //textAlign(CENTER);
     textStyle(BOLD);
     text("try again",(width/8)*6, (height/15)*14);
-    rectMode(CENTER);
+    //rectMode(CENTER);
     noFill();
     stroke(255);
     rect(((width/8)*6), ((height/15)*14)-3, rect_widht, rect_height);
-           
+    //-((width/13)*1) / -((height/50)*1)   
          
         
 /*
@@ -108,6 +130,19 @@ function draw(){
     button2.touchStarted(clearEverything);   
         
      */ 
+       
+        
+     //CREATE THE ELLIPSE AREA
+    var x = width/2;
+    var y = height/2;
+    var r = energy * 2; 
+    
+    translate(0, -40);
+    noFill();
+    stroke(0);
+    strokeWeight(1);
+    ellipse (x, y, r, r);
+          
         
         
     } else if(energy >= maxEnergy) {
