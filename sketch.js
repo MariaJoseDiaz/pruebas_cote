@@ -214,14 +214,15 @@ function QuakeDots(){
 function mousePressed () {
  // if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= x && mouseY <= x + rect_height)
   
-  if (mouseX >= a && mouseX <= a + rect_widht && mouseY >= b && mouseY <= b + rect_height)
+  if (mouseX >= a && mouseX <= a + rect_widht && mouseY >= b && mouseY <= b + rect_height){
  fondo = color(random(0, 170), random(0, 170), random(0, 170));
 
+}else{
     // c y b = try again
   if (mouseX >= c && mouseX <= c + rect_widht && mouseY >= b && mouseY <= b + rect_height)
        energy = 0;
 // fondo = color(random(0, 170), random(0, 170), random(0, 170));
-
+}
 }
 
 
