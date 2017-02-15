@@ -51,7 +51,7 @@ function draw(){
         // TEXTS
         
      textFont(fontTitle);
-     textSize(height/30);
+     textSize(height/25);
      textAlign(CENTER);
      textStyle(BOLD);
      fill(0);
@@ -63,12 +63,12 @@ function draw(){
     fill(0);
     noStroke();    
     
-    textSize(height/15);
+    textSize(height/40);
     textAlign(CENTER);
     textStyle(NORMAL);
     text("Magnitude", width/2, height - height/5);
         
-    textSize(height/20);
+    textSize(height/230);
     textAlign(CENTER);
     textStyle(BOLD);
     text(magnitude,width/2, height - height/6.7);
@@ -215,14 +215,16 @@ function mousePressed () {
  // if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= x && mouseY <= x + rect_height)
   
   if (mouseX >= a && mouseX <= a + rect_widht && mouseY >= b && mouseY <= b + rect_height){
- fondo = color(random(0, 170), random(0, 170), random(0, 170));
+     energy = 0;
 
-}else{
+/* }else{
     // c y b = try again
   if (mouseX >= c && mouseX <= c + rect_widht && mouseY >= b && mouseY <= b + rect_height)
-       energy = 0;
+         fondo = color(random(0, 170), random(0, 170), random(0, 170));
+
 // fondo = color(random(0, 170), random(0, 170), random(0, 170));
 }
+*/
 }
 
 
@@ -236,10 +238,11 @@ function mousePressed () {
   
  }
 
- function clearEverything() {
+/* function clearEverything() {
     background(204);
     energy = 0;
  }
+ */
 
 function windowResized(){
     resizeCanvas(windowWidth,windowHeight);
