@@ -36,18 +36,6 @@ function setup(){
     fondo = color(204);
 }
 
-function mousePressed () {
- // if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= x && mouseY <= x + rect_height)
-  
-  if (mouseX >= a && mouseX <= a + rect_widht && mouseY >= b && mouseY <= b + rect_height)
- fondo = color(random(0, 170), random(0, 170), random(0, 170));
-
-  if (mouseX >= c && mouseX <= c + rect_widht && mouseY >= b && mouseY <= b + rect_height)
- fondo = color(random(0, 170), random(0, 170), random(0, 170));
-
-}
-
-
 function draw(){
      background(fondo);
     
@@ -212,13 +200,27 @@ function QuakeDots(){
    energy = 0;
 }
  
- */
+ 
 
  function touchStarted () {
  //     function mouseIsPressed () {
     if (mouseX >= ((width/8)*2) && mouseX <= ((width/8)*2) + rect_widht && mouseY >= ((height/15)*14)-3 && mouseY <= ((height/15)*14)-3 + rect_height)
    background(0);
-     energy = 0;
+    
+
+}
+*/
+
+function mousePressed () {
+ // if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= x && mouseY <= x + rect_height)
+  
+  if (mouseX >= a && mouseX <= a + rect_widht && mouseY >= b && mouseY <= b + rect_height)
+ fondo = color(random(0, 170), random(0, 170), random(0, 170));
+
+    // c y b = try again
+  if (mouseX >= c && mouseX <= c + rect_widht && mouseY >= b && mouseY <= b + rect_height)
+       energy = 0;
+// fondo = color(random(0, 170), random(0, 170), random(0, 170));
 
 }
 
