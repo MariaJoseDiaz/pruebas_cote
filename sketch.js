@@ -215,11 +215,12 @@ function QuakeDots(){
 }
 */
 
-function mousePressed () {
+function touchStarted () {
  // if (mouseX >= x && mouseX <= x + rect_widht && mouseY >= x && mouseY <= x + rect_height)
   
   if (mouseX >= a && mouseX <= a + rect_widht && mouseY >= b && mouseY <= b + rect_height){
-     energy = 0;
+     background(204);
+      energy = 0;
 
  }else{
     // c y b = try again
