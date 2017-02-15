@@ -25,7 +25,7 @@ var fondo;
 
 
 function preload() {
-    cover = loadImg("gif.gif");
+    cover = createImg("gif.gif");
     myImage1 = loadImage("prova1.png");
     myImage2 = loadImage("prova2.jpg");
     fontTitle = loadFont("OCRBStd.otf");
@@ -44,7 +44,8 @@ function draw(){
      var magnitude = int(map(energy, 0, 1000, 0, 10)); 
     
      if (energy < 0.5) {
-     image(cover,0,0,windowWidth,windowHeight); 
+   //  image(cover,0,0,windowWidth,windowHeight);
+         cover.position (0,0) //,windowWidth,windowHeight)
      } 
     else if (energy > 0.5 && energy < maxEnergy){
      
